@@ -17,6 +17,9 @@ class AdminUserSeeder extends Seeder
         ], [
             'name' => 'admin',
             'password' => bcrypt('123456'),
+            'date_birth' => '01/01/2002',
+            'phone' => '11111111111',
+            'gender' => "masculino",
             'email_verified_at' => '2024-09-24 14:37:15'
         ]);
 

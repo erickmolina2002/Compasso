@@ -11,6 +11,7 @@ use App\Policies\RolePolicy;
 use App\Models\Permission;
 use App\Policies\PermissionPolicy;
 use Illuminate\Support\Facades\Gate;
+use Inertia\Inertia;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -38,5 +39,14 @@ class AppServiceProvider extends ServiceProvider
         });
 
         Vite::prefetch(concurrency: 3);
+
+         Inertia::share([
+        'flash' => function () {
+            return [
+                'success' => session('success'),
+                'error' => session('error'),
+            ];
+        },
+    ]);
     }
 }

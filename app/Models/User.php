@@ -2,6 +2,8 @@
 
 namespace App\Models;
 
+use App\Casts\GenderCast;
+use App\Casts\PhoneNumberCast;
 use Filament\Models\Contracts\FilamentUser;
 use Filament\Panel;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -18,6 +20,9 @@ class User extends Authenticatable implements FilamentUser, MustVerifyEmail
         'name',
         'email',
         'password',
+        'date_birth',
+        'phone',
+        'gender'
     ];
 
     protected $hidden = [
@@ -30,6 +35,9 @@ class User extends Authenticatable implements FilamentUser, MustVerifyEmail
         return [
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
+            'date_birth' => 'datetime',
+            'phone' => PhoneNumberCast::class,
+            'gender' => GenderCast::class,
         ];
     }
 

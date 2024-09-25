@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\UserResource\Pages;
 use App\Filament\Resources\UserResource\RelationManagers;
 use App\Models\User;
+use Carbon\Carbon;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -58,7 +59,6 @@ class UserResource extends Resource
     {
         return $table
             ->columns([
-
                 Tables\Columns\TextColumn::make('name')
                     ->label('Nome')
                     ->searchable(),
@@ -78,22 +78,40 @@ class UserResource extends Resource
                     ->trueColor('success')
                     ->falseColor('warning')
                     ->sortable()
-                    ->getStateUsing(fn ($record) => !is_null($record->email_verified_at))
+                    ->getStateUsing(fn($record) => !is_null($record->email_verified_at))
                     ->alignment('center')
                     ->size('lg'),
             ])
             ->filters([
                 //
-            ])
-            ->actions([
+            ])->
+            actions([
                 Tables\Actions\ViewAction::make()
                     ->form([
-                        Forms\Components\TextInput::make('name')
-                            ->label('Nome')
-                            ->disabled(),
-                        Forms\Components\TextInput::make('email')
-                            ->label('Email')
-                            ->disabled(),
+                        Forms\Components\Grid::make(2)
+                            ->schema([
+                                Forms\Components\TextInput::make('name')
+                                    ->label('Nome')
+                                    ->disabled()
+                                    ->formatStateUsing(fn($state) => ucwords(strtolower($state))),
+                                Forms\Components\TextInput::make('email')
+                                    ->label('Email')
+                                    ->disabled(),
+                                Forms\Components\TextInput::make('date_birth')
+                                    ->formatStateUsing(function ($state) {
+                                        return $state ? Carbon::parse($state)->format('d/m/Y') : null;
+                                    })
+                                    ->label('Data de Nascimento')
+                                    ->disabled(),
+                                Forms\Components\TextInput::make('gender')
+                                    ->label('Gênero')
+                                    ->disabled()
+                                    ->formatStateUsing(fn($state) => ucfirst(strtolower($state))),
+                                Forms\Components\TextInput::make('phone')
+                                    ->mask('(99) 99999-9999')
+                                    ->label('Telefone')
+                                    ->disabled(),
+                            ]),
                     ]),
                 Tables\Actions\EditAction::make()
             ])
