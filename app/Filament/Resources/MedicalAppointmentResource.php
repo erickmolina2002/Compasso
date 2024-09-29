@@ -54,6 +54,20 @@ class MedicalAppointmentResource extends Resource
 
                 Forms\Components\DateTimePicker::make('date')
                     ->label('Data da Consulta')
+                    ->native(false)
+                    ->time(false)
+                    ->minDate(now()->addDay()->startOfDay())
+                    ->required(),
+
+                Forms\Components\TimePicker::make('time')
+                    ->label('Hora da Consulta')
+                    ->native(false)
+                    ->default('09:00')
+                    ->after('09:00')
+                    ->before('22:00')
+                    ->step(30)
+                    ->minutesStep(30)
+                    ->seconds(false)
                     ->required(),
 
                 Forms\Components\TextInput::make('reason')
@@ -83,7 +97,12 @@ class MedicalAppointmentResource extends Resource
 
                 Tables\Columns\TextColumn::make('date')
                     ->label('Data da Consulta')
-                    ->dateTime('d/m/Y - H:i:s')
+                    ->dateTime('d/m/Y')
+                    ->sortable(),
+
+                Tables\Columns\TextColumn::make('time')
+                    ->label('Hora da Consulta')
+                    ->dateTime('H:i')
                     ->sortable(),
 
                 Tables\Columns\TextColumn::make('reason')
@@ -132,6 +151,17 @@ class MedicalAppointmentResource extends Resource
                     ->query(function (Builder $query, array $data) {
                         return $query->when($data['date'], function (Builder $query, $date) {
                             $query->whereDate('date', $date);
+                        });
+                    }),
+
+                Filter::make('Hora da Consulta')
+                    ->form([
+                        Forms\Components\DatePicker::make('time')
+                            ->label('Hora da Consulta')
+                    ])
+                    ->query(function (Builder $query, array $data) {
+                        return $query->when($data['time'], function (Builder $query, $date) {
+                            $query->whereDate('time', $date);
                         });
                     }),
 

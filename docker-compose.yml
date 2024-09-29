@@ -6,8 +6,8 @@ services:
       context: .
       dockerfile: Dockerfile
     environment:
-    - PUID=1000
-    - PGID=1000
+    - PUID=www-data
+    - PGID=www-data
     volumes:
       - .:/var/www
     depends_on:

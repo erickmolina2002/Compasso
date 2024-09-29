@@ -5,24 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb57dea1-16e8-49bf-ba29-9186d33fd975" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compasso.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compasso.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Filament/Resources/UserResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Filament/Resources/UserResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisteredUserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/EnsureEmailIsVerified.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/EnsureEmailIsVerified.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/0001_01_01_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/AdminUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/AdminUserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/AdminUserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/pt_BR.json" beforeDir="false" afterPath="$PROJECT_DIR$/lang/pt_BR.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Casts/GenderCast.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Casts/GenderCast.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Filament/Resources/MedicalAppointmentResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Filament/Resources/MedicalAppointmentResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/MedicalAppointment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MedicalAppointment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2024_09_17_210801_medical_appointments.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_09_17_210801_medical_appointments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/logs/access.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/logs/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Auth/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Auth/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/Pages/Auth/Register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/Pages/Auth/Register.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -532,6 +524,11 @@
       <workItem from="1727206441578" duration="9152000" />
       <workItem from="1727270783516" duration="118000" />
       <workItem from="1727282771937" duration="8427000" />
+      <workItem from="1727297582771" duration="941000" />
+      <workItem from="1727368911334" duration="42000" />
+      <workItem from="1727371841161" duration="83000" />
+      <workItem from="1727458936632" duration="588000" />
+      <workItem from="1727620024784" duration="3830000" />
     </task>
     <servers />
   </component>

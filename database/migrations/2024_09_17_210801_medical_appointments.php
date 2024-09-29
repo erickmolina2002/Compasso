@@ -16,7 +16,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained('users');
             $table->string('doctor', 120);
-            $table->dateTime('date');
+            $table->date('date');
+            $table->time('time');
             $table->string('reason', 255);
             $table->enum('status', [AppointmentStatusEnum::getAllStatus()])->default(AppointmentStatusEnum::SCHEDULED);
             $table->timestamps();
