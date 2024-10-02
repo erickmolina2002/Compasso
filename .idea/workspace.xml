@@ -6,15 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fb57dea1-16e8-49bf-ba29-9186d33fd975" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Casts/GenderCast.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Casts/GenderCast.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Filament/Resources/MedicalAppointmentResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Filament/Resources/MedicalAppointmentResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MedicalAppointment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MedicalAppointment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2024_09_17_210801_medical_appointments.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2024_09_17_210801_medical_appointments.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/logs/access.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/logs/access.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nginx/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/nginx/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runs/detect/train/args.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -528,7 +524,10 @@
       <workItem from="1727368911334" duration="42000" />
       <workItem from="1727371841161" duration="83000" />
       <workItem from="1727458936632" duration="588000" />
-      <workItem from="1727620024784" duration="3830000" />
+      <workItem from="1727620024784" duration="5737000" />
+      <workItem from="1727700319931" duration="6520000" />
+      <workItem from="1727797471668" duration="20000" />
+      <workItem from="1727884898774" duration="109000" />
     </task>
     <servers />
   </component>

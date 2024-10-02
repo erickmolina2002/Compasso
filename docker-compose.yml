@@ -5,9 +5,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    env_file:
+        - .env
     environment:
-    - PUID=www-data
-    - PGID=www-data
+        - PUID=${PUID:-$(id -u)}
+        - PGID=${PGID:-$(id -g)}
     volumes:
       - .:/var/www
     depends_on:
